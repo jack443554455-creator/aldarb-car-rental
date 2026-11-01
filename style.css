@@ -1,0 +1,79 @@
+/* style.css - ملف التنسيق الموحد لجميع الصفحات (الألوان والخطوط من مكان واحد) */
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    color: #263238;
+    background-color: #f3efe6;
+    margin: 0;
+    line-height: 1.8;
+}
+h1, h2, h3 { font-family: Tahoma, Arial, sans-serif; color: #1f3a34; }
+h1 { font-size: 30px; }
+h2 { font-size: 22px; border-right: 6px solid #d9892b; padding-right: 10px; }
+h3 { font-size: 18px; }
+p, li, td, th, label, legend, a, span, button { font-family: Tahoma, Arial, sans-serif; font-size: 16px; }
+
+/* ===== الترويسة والتنقل ===== */
+#header { background-color: #1f3a34; color: #ffffff; padding: 18px 30px; text-align: center; }
+#header h1 { color: #ffffff; margin: 0; }
+#header p { margin: 4px 0 0 0; color: #f0c98a; }
+#nav { background-color: #2c5248; text-align: center; padding: 0; }
+#nav a { display: inline-block; color: #ffffff; text-decoration: none; padding: 12px 22px; }
+#nav a:hover { background-color: #d9892b; }
+#nav a.current { background-color: #d9892b; }
+#content { width: 88%; max-width: 980px; margin: 25px auto; background-color: #ffffff; padding: 25px 35px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+#footer { text-align: center; color: #5d6b66; padding: 15px; font-size: 14px; }
+
+/* ===== الجداول ===== */
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th { background-color: #1f3a34; color: #ffffff; padding: 9px; border: 1px solid #1f3a34; }
+td { padding: 8px; border: 1px solid #cfd8d4; text-align: center; }
+tr.even td { background-color: #f6f9f8; }
+td img { width: 120px; height: 60px; border-radius: 4px; }
+tr.details-row { display: none; }
+tr.details-row td { background-color: #fff6e6; text-align: right; }
+
+/* ===== عناصر الإدخال النصية (تُنسَّق من هنا فقط) ===== */
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
+    width: 260px;
+    padding: 7px 9px;
+    color: #1f3a34;
+    background-color: #fffdf7;
+    border: 1px solid #8aa39a;
+    border-radius: 4px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="date"]:focus { border-color: #d9892b; background-color: #ffffff; }
+
+/* ===== النموذج ===== */
+fieldset { border: 1px solid #8aa39a; border-radius: 6px; margin: 14px 0; padding: 12px 18px; }
+legend { color: #1f3a34; font-weight: bold; padding: 0 8px; }
+label { display: inline-block; width: 150px; margin: 7px 0; }
+span.error { color: #b3261e; font-size: 14px; margin-right: 8px; }
+span.hint { color: #6a7a75; font-size: 13px; margin-right: 8px; }
+p.row { margin: 4px 0; }
+#booking-form { display: none; }
+#selected-list { background-color: #eef5f2; border-radius: 5px; padding: 8px 14px; }
+
+/* ===== الأزرار ===== */
+button, input[type="submit"] {
+    background-color: #d9892b;
+    color: #ffffff;
+    border: none;
+    padding: 9px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+}
+button:hover, input[type="submit"]:hover { background-color: #b9701f; }
+button.secondary { background-color: #6a7a75; }
+
+/* ===== نافذة النتيجة ===== */
+#overlay { display: none; position: fixed; top: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.55); z-index: 10; }
+#result-box { display: none; position: fixed; top: 8%; right: 50%; margin-right: -310px; width: 620px; max-height: 80%; overflow: auto; background-color: #ffffff; border-radius: 8px; padding: 22px 28px; z-index: 11; border-top: 8px solid #d9892b; }
+#result-box h2 { margin-top: 0; }
+tr.total td { font-weight: bold; background-color: #eef5f2; }
+tr.final td { font-weight: bold; background-color: #d9892b; color: #ffffff; }
+.note-box { background-color: #fff6e6; border: 1px dashed #d9892b; padding: 10px 16px; border-radius: 5px; }
