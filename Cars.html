@@ -122,8 +122,8 @@
 </fieldset>
 <fieldset>
 <legend>مدة الإيجار</legend>
-<p class="row"><label for="start-date">تاريخ البداية:</label><input type="date" id="start-date" name="startdate" /><span class="hint">(yyyy-mm-dd - إلزامي)</span><span id="err-start" class="error"></span></p>
-<p class="row"><label for="end-date">تاريخ النهاية:</label><input type="date" id="end-date" name="enddate" /><span class="hint">(yyyy-mm-dd - إلزامي)</span><span id="err-end" class="error"></span></p>
+<p class="row"><label for="start-date">تاريخ البداية:</label><input type="text" id="start-date" name="startdate" maxlength="10" placeholder="2026-11-01" /><span class="hint">(yyyy-mm-dd - إلزامي)</span><span id="err-start" class="error"></span></p>
+<p class="row"><label for="end-date">تاريخ النهاية:</label><input type="text" id="end-date" name="enddate" maxlength="10" placeholder="2026-11-10" /><span class="hint">(yyyy-mm-dd - إلزامي)</span><span id="err-end" class="error"></span></p>
 </fieldset>
 <p><input type="submit" id="send-btn" value="إرسال" /></p>
 </form>
